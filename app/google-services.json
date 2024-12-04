@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615570089329",
+    "project_id": "checkinpromobile",
+    "storage_bucket": "checkinpromobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615570089329:android:823def03a90bd9a5c202d0",
+        "android_client_info": {
+          "package_name": "iset.project.checkinpromobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfxLcBJNYQknQ43qiB_9xbnQndgODCenw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

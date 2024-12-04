@@ -1,6 +1,6 @@
 package iset.project.checkinpromobile.Model;
 
-public class User {
+public class SignupRequest {
     private String nom;
     private String prenom;
     private String email;
@@ -12,15 +12,15 @@ public class User {
     private String adresseComplet;
     private String dateNaissance;
     private String dateDebutTravail;
-    private byte[] image; // Optional: For storing image
+    private String image;  // Image can be converted to base64
 
     // Add constructor, getters, and setters
 
 
-    public User() {
+    public SignupRequest() {
     }
 
-    public User(String nom, String prenom, String email, String username, String password, String telephone, String cin, String poste, String adresseComplet, String dateNaissance, String dateDebutTravail, byte[] image) {
+    public SignupRequest(String nom, String prenom, String email, String username, String password, String telephone, String cin, String poste, String adresseComplet, String dateNaissance, String dateDebutTravail, String image) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
@@ -83,20 +83,20 @@ public class User {
         this.telephone = telephone;
     }
 
-    public String getCin() {
-        return cin;
-    }
-
-    public void setCin(String cin) {
-        this.cin = cin;
-    }
-
     public String getPoste() {
         return poste;
     }
 
     public void setPoste(String poste) {
         this.poste = poste;
+    }
+
+    public String getCin() {
+        return cin;
+    }
+
+    public void setCin(String cin) {
+        this.cin = cin;
     }
 
     public String getAdresseComplet() {
@@ -123,11 +123,12 @@ public class User {
         this.dateDebutTravail = dateDebutTravail;
     }
 
-    public byte[] getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(byte[] image) {
+    public void setImage(String image) {
         this.image = image;
     }
 }
+
